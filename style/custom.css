@@ -1,0 +1,111 @@
+body {
+  display: grid;
+  grid-template-areas: 
+  "header menu menu menu"
+  "hero hero hero hero"
+  "main main text image"
+  "main main text extra"
+  "banner banner banner banner";
+  grid-template-rows: 12% 6fr 1fr 1.5fr 15%;
+  grid-template-columns: 25% 3fr 4fr 20%;
+  grid-gap: 0;
+  height: 100vh;
+  text-align: center;
+}
+header {
+  background: #050d24;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+}
+nav {
+  background: #ff3a4b;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+}
+main {
+  background: #0386ca;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+}
+section {
+  background: #133149;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+}
+article {
+  background: white;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 20px;
+}
+div {
+  background: #b2e5e8;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 20px;
+}
+footer {
+  background: #00be98;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 20px;
+}
+aside {
+  background: #fed362;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 20px;
+}
+#page_header {
+  grid-area: header;
+  padding-top: 20px;
+}
+#page_menu {
+  grid-area: menu;
+  padding-top: 20px;
+}
+#page_hero {
+  grid-area: hero;
+  padding-top: 20px;
+}
+#page_main {
+  grid-area: main;
+  padding-top: 20px;
+}
+#page_text {
+  grid-area: text;
+  padding-top: 20px;
+}
+#page_image {
+  grid-area: image;
+  padding-top: 20px;
+}
+#page_extra {
+  grid-area: extra;
+  padding-top: 20px;
+}
+#page_banner {
+  grid-area: banner;
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    grid-template-areas: 
+    "header menu menu menu"
+    "hero hero hero hero"
+    "main main main main"
+    "text text image image"
+    "text text extra extra"
+    "banner banner banner banner";
+    grid-template-rows: 15% 4fr 2fr 1fr 1fr 10%;
+    grid-template-columns: 25% 3fr 2fr 10%;
+    grid-gap: 0;
+    height: 100vh;
+    text-align: center;
+  }
+}
